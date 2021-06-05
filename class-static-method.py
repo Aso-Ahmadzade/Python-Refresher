@@ -44,7 +44,7 @@ class Book:
 
     @classmethod
     def hardcover(cls, name, page_weigth):
-        return Book(name, cls.TYPES[0], page_weigth)
+        return cls(name, cls.TYPES[0], page_weigth)
 
     @classmethod
     def paperback(cls, name, page_weigth):
