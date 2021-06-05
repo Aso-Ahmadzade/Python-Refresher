@@ -40,7 +40,8 @@ class Book:
         self.weigth = weigth
 
     def __repr__(self):
-        return f"Book('{self.name}', '{self.book_type}', {self.weigth})"
+        # The !r, calls the repr method of self.name and self.book_type here, so that it shows up as having the quotes ('') already. So this is just a little bit nicer that putting the qoutes in yourself.
+        return f"Book({self.name!r}, {self.book_type!r}, {self.weigth})"
 
     @classmethod
     def hardcover(cls, name, page_weigth):
