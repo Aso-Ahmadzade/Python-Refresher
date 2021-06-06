@@ -1,0 +1,1 @@
+# In Python version 2 importing from another folder will not work. So we should create a file in the name of __init__.py inside any folder that we wanna import from. Also it's better to create this file, because they are sometimes required.
